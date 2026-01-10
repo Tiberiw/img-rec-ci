@@ -2,7 +2,7 @@
 FROM python:3.11
 WORKDIR /code
 COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
+RUN pip install --no-cache-dir -r ./requirements.txt
 COPY app ./app
 # copy pretrained models
 COPY .cvlib /root/.cvlib
