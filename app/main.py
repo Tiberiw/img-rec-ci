@@ -77,7 +77,7 @@ app = FastAPI(title='Deploying a ML Model with FastAPI')
 # By using @app.get("/") you are allowing the GET method to work for the / endpoint.
 @app.get("/")
 def home():
-    return "Congratulations! Your API is working as expected. Now head over to <your_server>/docs"
+    return "Justa check"
 
 
 @app.post("/predict") 
